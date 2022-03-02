@@ -28,8 +28,9 @@
     node stream_server.js
     python manage.py runserver  
 ``` 
-#####배포  
+###배포  
 -라즈베리파이
--nginx
--GUNICORN
+-nginx (node, django)
+-Django GUNICORN사용
+-node forever사용
 ###### # node_django_video_stream_-
