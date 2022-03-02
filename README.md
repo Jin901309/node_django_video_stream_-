@@ -7,8 +7,6 @@
 <p align="center"><img src="video.png" 너비="400"></p>
 
 
-
-
 ## django-youtube 비슷하게 만들어 본  사이트
 
 -django<br>
@@ -25,6 +23,10 @@
 -nginx (node, django)<br>
 -Django GUNICORN사용<br>
 -node forever사용<br>
+
+## 사용한 버전
+python==3.9
+Django==3.2.9
 
 
 ## 개발서버 테스트시 노드가 설치되어 있어야하고 urlencode 설치되어 있어야함
