@@ -3,7 +3,8 @@
 <p align="center"><img src="main.png" 너비="400"></p>
 <p align="center"><img src="detail.png" 너비="400"></p>
 <p align="center"><img src="channel.png" 너비="400"></p>
-
+<p align="center"><img src="login.png" 너비="400"></p>
+<p align="center"><img src="video.png" 너비="400"></p>
 
 
 
@@ -17,6 +18,7 @@
 -axios.js
 -alpine.js
 -video.js
+-postgresql
 
 #####테스트시 노드가 설치되어 있어야하고 urlencode 설치되어 있어야함
 ```
