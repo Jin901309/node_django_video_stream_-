@@ -24,6 +24,9 @@
 -Django GUNICORN사용<br>
 -node forever사용<br>
 
+## <a href="#">관리자 페이지 구현한 대략적인 이미지</a>
+
+
 ## 사용한 버전
 python==3.9
 Django==3.2.9
