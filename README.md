@@ -18,7 +18,7 @@
 -alpine.js
 -video.js
 
-#####테스트시 노드가 설치되어 있어야하고 urlencoderk 설치되어 있어야함
+#####테스트시 노드가 설치되어 있어야하고 urlencode 설치되어 있어야함
 ```
     npm install urlencode
 ```
