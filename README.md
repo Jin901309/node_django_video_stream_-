@@ -31,7 +31,7 @@
     python manage.py runserver  
 ``` 
 ## 배포  
--라즈베리파이<br>
+-라즈베리파이(라즈베리파이에는 기본 방화벽이없음-> ufw,fail2ban사용)<br>
 -nginx (node, django)<br>
 -Django GUNICORN사용<br>
 -node forever사용<br>
