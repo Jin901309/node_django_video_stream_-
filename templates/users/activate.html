@@ -1,0 +1,11 @@
+{% autoescape off %}
+
+
+안녕하세요. {{user.email}}
+
+아래 링크를 사용하여 계정을 확인하십시오.
+
+http://{{domain}}{% url 'users:activate' uidb64=uid token=token %}
+
+
+{% endautoescape %}

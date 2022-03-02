@@ -1,0 +1,11 @@
+<div class="px-8 pt-6 pb-8 mb-4 bg-white rounded shadow-md">
+    <form class="flex items-center justify-center mb-2" method="post" action="{% url 'core:search' %}">
+      {% csrf_token %}
+      <input name="video_search"
+        class="w-2/3 px-3 py-2 leading-tight text-gray-700 border rounded shadow focus:outline-none focus:shadow-outline"
+        type="text" placeholder="동영상 검색" />
+      <button type="submit"
+        class="px-4 py-2 ml-2 font-semibold text-blue-700 bg-transparent border border-blue-500 rounded hover:bg-blue-500 hover:text-white hover:border-transparent">검색</button>
+    </form>
+  </div>
+  

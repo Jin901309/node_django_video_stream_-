@@ -1,0 +1,11 @@
+{% load crispy_forms_tags %}
+<div class="w-full {% if field.errors %}has_error{% endif %}">
+    
+    <br>
+    {{field|as_crispy_field}}
+    {% if field.errors %}
+        {% for error in field.errors %}
+            <span class="text-red-700 font-medium text-sm">{{error}}</span> 
+        {% endfor %}
+    {% endif %}
+</div> 

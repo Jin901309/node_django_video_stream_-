@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+
+{% endblock title %}
+{% block content %}
+{% include "mixins/search_input.html" %}
+<div class="w-full text-center font-bold mb-3">
+    
+    
+    <h5 class="text-3xl text-gray-500">구독 영상</h5>
+ 
+        
+    
+</div>  
+<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" >
+
+      
+    <div class="grid gap-6 row-gap-5 lg:grid-cols-3">
+
+                
+       
+            
+        {% for channel in sublist.channel.all %}
+        {% for video in channel.video.all  %}
+
+        
+        
+        
+            
+          
+       
+        <div class="overflow-hidden" id="videoitem">
+            <div class="relative w-full transition-shadow duration-300 hover:shadow-xl">
+                <img class="object-scale-down w-full h-56 mb-3 rounded shadow-lg sm:h-64 md:h-80 lg:h-80"
+                    src="{{ video.thumbnailimage.url }}" alt="image" />
+                <a href="{% url 'videos:detail' video.pk %}" aria-label="Play Video"
+                    class="absolute inset-0 flex items-center justify-center w-full h-full transition-colors duration-300 bg-gray-900 bg-opacity-50 group hover:bg-opacity-25">
+                    <div
+                        class="flex items-center justify-center w-16 h-16 transition duration-300 transform bg-gray-100 rounded-full shadow-2xl group-hover:scale-110">
+                        <svg class="w-10 text-gray-900" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M16.53,11.152l-8-5C8.221,5.958,7.833,5.949,7.515,6.125C7.197,6.302,7,6.636,7,7v10 c0,0.364,0.197,0.698,0.515,0.875C7.667,17.958,7.833,18,8,18c0.184,0,0.368-0.051,0.53-0.152l8-5C16.822,12.665,17,12.345,17,12 S16.822,11.335,16.53,11.152z">
+                            </path>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <div class="flex items-start w-full h-14">
+
+                    <!-- <img src="" alt="" /> -->
+
+                    {% if video.user.channels.main_image  %}
+                    <img class="w-12 h-12 rounded-2xl" src="{{ video.user.channels.main_image.url }}" alt="">
+                    {% else %}
+                    <img class="w-12 h-12 bg-white rounded-2xl " src="{% static 'images/user_icon.png' %}" alt="">
+                    {% endif %}
+
+
+
+                    <h6 class="ml-1 text-lg font-bold leading-none sm:text-lg">
+                        {{video.title}}
+                    </h6>
+                </div>
+                <div class="flex justify-between w-full h-5">
+                    <div>
+                        <p class="text-gray-700">{{ video.user.channels.name }}</p>
+                    </div>
+                    
+                    <div class="text-gray-700">
+                        
+                        <p >
+                            {% if video.created_string == False %}
+                            {{video.created|date:'m월 d일'}}
+                            {% else %}
+                            {{video.created_string}}
+                            {% endif %}
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        {% endfor %}
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+{% endblock content %}
