@@ -24,7 +24,7 @@
 -Django GUNICORN사용<br>
 -node forever사용<br>
 
-## <a href="#">관리자 페이지 구현한 대략적인 이미지</a>
+## <a href="https://github.com/Jin901309/node_django_video_stream_-/tree/main/admin_page_image">관리자 페이지 구현한 일부 이미지</a>
 
 
 ## 사용한 버전
