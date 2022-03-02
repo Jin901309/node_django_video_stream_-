@@ -20,6 +20,13 @@
 -video.js<br>
 -postgresql<br>
 
+## 배포  
+-라즈베리파이(라즈베리파이에는 기본 방화벽이없음-> ufw,fail2ban사용)<br>
+-nginx (node, django)<br>
+-Django GUNICORN사용<br>
+-node forever사용<br>
+
+
 ## 개발서버 테스트시 노드가 설치되어 있어야하고 urlencode 설치되어 있어야함
 ```
     npm install urlencode
@@ -30,9 +37,4 @@
     node stream_server.js
     python manage.py runserver  
 ``` 
-## 배포  
--라즈베리파이(라즈베리파이에는 기본 방화벽이없음-> ufw,fail2ban사용)<br>
--nginx (node, django)<br>
--Django GUNICORN사용<br>
--node forever사용<br>
 ###### # node_django_video_stream_-
