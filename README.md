@@ -11,14 +11,14 @@
 
 ## django-youtube 비슷하게 만들어 본  사이트
 
--django
--tailwind.css
--html
--node.js
--axios.js
--alpine.js
--video.js
--postgresql
+-django<br>
+-tailwind.css<br>
+-html<br>
+-node.js<br>
+-axios.js<br>
+-alpine.js<br>
+-video.js<br>
+-postgresql<br>
 
 #####테스트시 노드가 설치되어 있어야하고 urlencode 설치되어 있어야함
 ```
@@ -31,8 +31,8 @@
     python manage.py runserver  
 ``` 
 ###배포  
--라즈베리파이
--nginx (node, django)
--Django GUNICORN사용
--node forever사용
+-라즈베리파이<br>
+-nginx (node, django)<br>
+-Django GUNICORN사용<br>
+-node forever사용<br>
 ###### # node_django_video_stream_-
