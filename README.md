@@ -28,4 +28,8 @@
     node stream_server.js
     python manage.py runserver  
 ``` 
+#####배포  
+-라즈베리파이
+-nginx
+-GUNICORN
 ###### # node_django_video_stream_-
