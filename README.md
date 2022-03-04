@@ -49,12 +49,12 @@ python==3.9
 Django==3.2.9
 
 
-## 개발서버 테스트시 노드가 설치되어 있어야하고 urlencode 설치되어 있어야함
+## 개발서버 사용시 노드가 설치되어 있어야하고 urlencode 설치되어 있어야함
 ```
     npm install urlencode
 ```
 
-## 개발서버 테스트시 개발서버와 영상 스트리밍 서버(node) 두개 켜있어야함
+## 개발서버 사용시 개발서버와 영상 스트리밍 서버(node) 두개 켜있어야함
 ```  
     node stream_server.js
     python manage.py runserver  
