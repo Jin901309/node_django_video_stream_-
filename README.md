@@ -18,7 +18,7 @@
 -video.js<br>
 -postgresql<br>
 
-## 배포  
+## 배포
 -라즈베리파이(라즈베리파이에는 기본 방화벽이없음-> ufw,fail2ban사용)<br>
 -nginx (node, django)<br>
 -Django GUNICORN사용<br>
@@ -30,6 +30,7 @@
 -댓글(crd)<br>
 -영상 재생(node.js)<br>
 -영상 업로드(crud)<br>
+(대용량 파일 업로드 구현 할 생각이 없어서 chunk 사용안함.(라즈베리파이에 올려볼 목적))
 -구독<br>
 -채널<br>
 -조회수<br>
@@ -45,8 +46,8 @@
 
 
 ## 사용한 버전
-python==3.9
-Django==3.2.9
+python==3.9<br>
+Django==3.2.9<br>
 
 
 ## 개발서버 사용시 노드가 설치되어 있어야하고 urlencode 설치되어 있어야함
